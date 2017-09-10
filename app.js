@@ -1,5 +1,5 @@
 var
-  port = 8080,
+  port = 80,
   http = require('http'),
   fs = require('fs');
 var
