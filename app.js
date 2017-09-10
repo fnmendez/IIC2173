@@ -25,6 +25,9 @@ var
     } else {
         ret += req.ip;
     }
+    if(ret.substr(0, 7) == '::ffff:') {
+      ret = ret.substr(7);
+    }
     return ret;
   };
 var
