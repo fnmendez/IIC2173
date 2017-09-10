@@ -33,7 +33,7 @@ var
       postLog(getUserInfo(req));
     }
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.write('Information from last 15 requests:\n' + getLog(15));
+    res.write('Information from last 30 requests:\n' + getLog(30));
     res.end();
   });
 
